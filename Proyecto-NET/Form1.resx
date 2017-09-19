@@ -117,41 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="sidebar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>41, 9</value>
   </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="sidebar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="menuStrip2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="sidebar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
-  <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 22</value>
+  <data name="tsmSubProductos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 30</value>
   </data>
-  <data name="toolStripMenuItem5.Text" xml:space="preserve">
+  <data name="tsmSubProductos.Text" xml:space="preserve">
     <value>Productos</value>
   </data>
-  <data name="toolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 22</value>
+  <data name="tsmSubTarjetas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 31</value>
   </data>
-  <data name="toolStripMenuItem6.Text" xml:space="preserve">
+  <data name="tsmSubTarjetas.Text" xml:space="preserve">
     <value>Tarjetas de crédito</value>
   </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 21</value>
+  <data name="tsmParametrizacion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9.75pt, style=Bold</value>
   </data>
-  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+  <data name="tsmParametrizacion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 37</value>
+  </data>
+  <data name="tsmParametrizacion.Text" xml:space="preserve">
     <value>Parametrización</value>
   </data>
-  <data name="toolStripMenuItem7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+  <data name="tsmSubVentas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
   </data>
-  <data name="toolStripMenuItem7.Text" xml:space="preserve">
+  <data name="tsmSubVentas.Text" xml:space="preserve">
     <value>Ventas</value>
   </data>
-  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 21</value>
+  <data name="tsmVentas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9.75pt, style=Bold</value>
   </data>
-  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+  <data name="tsmVentas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 37</value>
+  </data>
+  <data name="tsmVentas.Text" xml:space="preserve">
     <value>Ventas</value>
   </data>
   <data name="toolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
@@ -160,72 +170,729 @@
   <data name="toolStripMenuItem8.Text" xml:space="preserve">
     <value>Reportes</value>
   </data>
-  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 21</value>
+  <data name="tsmReportes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9.75pt, style=Bold</value>
   </data>
-  <data name="toolStripMenuItem3.Text" xml:space="preserve">
+  <data name="tsmReportes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 37</value>
+  </data>
+  <data name="tsmReportes.Text" xml:space="preserve">
     <value>Reportes</value>
   </data>
-  <data name="menuStrip2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tsmSalir.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9.75pt, style=Bold</value>
+  </data>
+  <data name="tsmSalir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 41</value>
+  </data>
+  <data name="tsmSalir.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="sidebar.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="menuStrip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>473, 25</value>
+  <data name="sidebar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 2, 0, 2</value>
+  </data>
+  <data name="sidebar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 335</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="menuStrip2.TabIndex" type="System.Int32, mscorlib">
+  <data name="sidebar.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="menuStrip2.Text" xml:space="preserve">
-    <value>menuStrip2</value>
+  <data name="sidebar.Text" xml:space="preserve">
+    <value>sidebar</value>
   </data>
-  <data name="&gt;&gt;menuStrip2.Name" xml:space="preserve">
-    <value>menuStrip2</value>
+  <data name="&gt;&gt;sidebar.Name" xml:space="preserve">
+    <value>sidebar</value>
   </data>
-  <data name="&gt;&gt;menuStrip2.Type" xml:space="preserve">
+  <data name="&gt;&gt;sidebar.Type" xml:space="preserve">
     <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;menuStrip2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;sidebar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;menuStrip2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;sidebar.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="groupBoxRegistrarProducto.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 26.25pt, style=Bold</value>
+  <data name="txtCantidad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 122</value>
+  <data name="txtCantidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 79</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 39</value>
+  <data name="txtCantidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 22</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="txtCantidad.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Bienvenidos</value>
+  <data name="&gt;&gt;txtCantidad.Name" xml:space="preserve">
+    <value>txtCantidad</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;txtCantidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtCantidad.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtCantidad.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="labCantidad.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labCantidad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="labCantidad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labCantidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 84</value>
+  </data>
+  <data name="labCantidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 16</value>
+  </data>
+  <data name="labCantidad.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="labCantidad.Text" xml:space="preserve">
+    <value>Cantidad: </value>
+  </data>
+  <data name="&gt;&gt;labCantidad.Name" xml:space="preserve">
+    <value>labCantidad</value>
+  </data>
+  <data name="&gt;&gt;labCantidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labCantidad.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;labCantidad.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtCodigo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="txtCodigo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 37</value>
+  </data>
+  <data name="txtCodigo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 22</value>
+  </data>
+  <data name="txtCodigo.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;txtCodigo.Name" xml:space="preserve">
+    <value>txtCodigo</value>
+  </data>
+  <data name="&gt;&gt;txtCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCodigo.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;txtCodigo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtNombre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 34</value>
+  </data>
+  <data name="txtNombre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;txtNombre.Name" xml:space="preserve">
+    <value>txtNombre</value>
+  </data>
+  <data name="&gt;&gt;txtNombre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNombre.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;txtNombre.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBoxEstado.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="comboBoxEstado.Items" xml:space="preserve">
+    <value>Disponible</value>
+  </data>
+  <data name="comboBoxEstado.Items1" xml:space="preserve">
+    <value>Agotado</value>
+  </data>
+  <data name="comboBoxEstado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 124</value>
+  </data>
+  <data name="comboBoxEstado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 24</value>
+  </data>
+  <data name="comboBoxEstado.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="comboBoxEstado.Text" xml:space="preserve">
+    <value>Disponible</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEstado.Name" xml:space="preserve">
+    <value>comboBoxEstado</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEstado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEstado.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEstado.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labNombre.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labNombre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="labNombre.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labNombre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 40</value>
+  </data>
+  <data name="labNombre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 16</value>
+  </data>
+  <data name="labNombre.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="labNombre.Text" xml:space="preserve">
+    <value>Nombre: </value>
+  </data>
+  <data name="&gt;&gt;labNombre.Name" xml:space="preserve">
+    <value>labNombre</value>
+  </data>
+  <data name="&gt;&gt;labNombre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labNombre.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;labNombre.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtPrecio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="txtPrecio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 81</value>
+  </data>
+  <data name="txtPrecio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 22</value>
+  </data>
+  <data name="txtPrecio.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;txtPrecio.Name" xml:space="preserve">
+    <value>txtPrecio</value>
+  </data>
+  <data name="&gt;&gt;txtPrecio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPrecio.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;txtPrecio.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnRegistrar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnRegistrar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="btnRegistrar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnRegistrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 175</value>
+  </data>
+  <data name="btnRegistrar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 33</value>
+  </data>
+  <data name="btnRegistrar.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="btnRegistrar.Text" xml:space="preserve">
+    <value>Agregar Producto</value>
+  </data>
+  <data name="&gt;&gt;btnRegistrar.Name" xml:space="preserve">
+    <value>btnRegistrar</value>
+  </data>
+  <data name="&gt;&gt;btnRegistrar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRegistrar.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;btnRegistrar.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labCodigo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labCodigo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="labCodigo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labCodigo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="labCodigo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 16</value>
+  </data>
+  <data name="labCodigo.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="labCodigo.Text" xml:space="preserve">
+    <value>Codigo: </value>
+  </data>
+  <data name="&gt;&gt;labCodigo.Name" xml:space="preserve">
+    <value>labCodigo</value>
+  </data>
+  <data name="&gt;&gt;labCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labCodigo.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;labCodigo.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labEstado.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labEstado.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="labEstado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 127</value>
+  </data>
+  <data name="labEstado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 16</value>
+  </data>
+  <data name="labEstado.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labEstado.Text" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="&gt;&gt;labEstado.Name" xml:space="preserve">
+    <value>labEstado</value>
+  </data>
+  <data name="&gt;&gt;labEstado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labEstado.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;labEstado.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="labPrecio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labPrecio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="labPrecio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 84</value>
+  </data>
+  <data name="labPrecio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 16</value>
+  </data>
+  <data name="labPrecio.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labPrecio.Text" xml:space="preserve">
+    <value>Precio: </value>
+  </data>
+  <data name="&gt;&gt;labPrecio.Name" xml:space="preserve">
+    <value>labPrecio</value>
+  </data>
+  <data name="&gt;&gt;labPrecio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labPrecio.Parent" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;labPrecio.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="groupBoxRegistrarProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 75</value>
+  </data>
+  <data name="groupBoxRegistrarProducto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>530, 225</value>
+  </data>
+  <data name="groupBoxRegistrarProducto.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="groupBoxRegistrarProducto.Text" xml:space="preserve">
+    <value>Registrar Producto</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRegistrarProducto.Name" xml:space="preserve">
+    <value>groupBoxRegistrarProducto</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRegistrarProducto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRegistrarProducto.Parent" xml:space="preserve">
+    <value>panelProductos</value>
+  </data>
+  <data name="&gt;&gt;groupBoxRegistrarProducto.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 26.25pt, style=Bold</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 22</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 39</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panelProductos</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelProductos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 0</value>
+  </data>
+  <data name="panelProductos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>615, 335</value>
+  </data>
+  <data name="panelProductos.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="panelProductos.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelProductos.Name" xml:space="preserve">
+    <value>panelProductos</value>
+  </data>
+  <data name="&gt;&gt;panelProductos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelProductos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelProductos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="comboBoxTarjeta.Items" xml:space="preserve">
+    <value>Activa</value>
+  </data>
+  <data name="comboBoxTarjeta.Items1" xml:space="preserve">
+    <value>Cancelada</value>
+  </data>
+  <data name="comboBoxTarjeta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 103</value>
+  </data>
+  <data name="comboBoxTarjeta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 24</value>
+  </data>
+  <data name="comboBoxTarjeta.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTarjeta.Name" xml:space="preserve">
+    <value>comboBoxTarjeta</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTarjeta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTarjeta.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTarjeta.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelEstado.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelEstado.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="labelEstado.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelEstado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 106</value>
+  </data>
+  <data name="labelEstado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 16</value>
+  </data>
+  <data name="labelEstado.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelEstado.Text" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="&gt;&gt;labelEstado.Name" xml:space="preserve">
+    <value>labelEstado</value>
+  </data>
+  <data name="&gt;&gt;labelEstado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelEstado.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;labelEstado.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnRegistrarTarjeta.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnRegistrarTarjeta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="btnRegistrarTarjeta.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnRegistrarTarjeta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 178</value>
+  </data>
+  <data name="btnRegistrarTarjeta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 33</value>
+  </data>
+  <data name="btnRegistrarTarjeta.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnRegistrarTarjeta.Text" xml:space="preserve">
+    <value>Agregar Tarjeta</value>
+  </data>
+  <data name="&gt;&gt;btnRegistrarTarjeta.Name" xml:space="preserve">
+    <value>btnRegistrarTarjeta</value>
+  </data>
+  <data name="&gt;&gt;btnRegistrarTarjeta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRegistrarTarjeta.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnRegistrarTarjeta.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtNombreTar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 61</value>
+  </data>
+  <data name="txtNombreTar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
+  </data>
+  <data name="txtNombreTar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtNombreTar.Name" xml:space="preserve">
+    <value>txtNombreTar</value>
+  </data>
+  <data name="&gt;&gt;txtNombreTar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNombreTar.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtNombreTar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelNombre.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelNombre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="labelNombre.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelNombre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 64</value>
+  </data>
+  <data name="labelNombre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 16</value>
+  </data>
+  <data name="labelNombre.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelNombre.Text" xml:space="preserve">
+    <value>Nombre: </value>
+  </data>
+  <data name="&gt;&gt;labelNombre.Name" xml:space="preserve">
+    <value>labelNombre</value>
+  </data>
+  <data name="&gt;&gt;labelNombre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelNombre.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;labelNombre.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 82</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 225</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Registrar Tarjeta</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>panelTarjeta</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 26.25pt, style=Bold</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 24</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 39</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Tarjetas de Credito</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panelTarjeta</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 26.25pt, style=Bold</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 151</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 39</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Bienvenidos</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panelTarjeta</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelTarjeta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 0</value>
+  </data>
+  <data name="panelTarjeta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>615, 335</value>
+  </data>
+  <data name="panelTarjeta.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="panelTarjeta.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelTarjeta.Name" xml:space="preserve">
+    <value>panelTarjeta</value>
+  </data>
+  <data name="&gt;&gt;panelTarjeta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTarjeta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelTarjeta.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="errorIcono.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>155, 7</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>473, 272</value>
+    <value>746, 335</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
@@ -1365,53 +2032,64 @@
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Jugos Naturales "El Pepe"</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
-    <value>toolStripMenuItem1</value>
+  <data name="&gt;&gt;tsmParametrizacion.Name" xml:space="preserve">
+    <value>tsmParametrizacion</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsmParametrizacion.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem5.Name" xml:space="preserve">
-    <value>toolStripMenuItem5</value>
+  <data name="&gt;&gt;tsmSubProductos.Name" xml:space="preserve">
+    <value>tsmSubProductos</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem5.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsmSubProductos.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem6.Name" xml:space="preserve">
-    <value>toolStripMenuItem6</value>
+  <data name="&gt;&gt;tsmSubTarjetas.Name" xml:space="preserve">
+    <value>tsmSubTarjetas</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem6.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsmSubTarjetas.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
-    <value>toolStripMenuItem2</value>
+  <data name="&gt;&gt;tsmVentas.Name" xml:space="preserve">
+    <value>tsmVentas</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsmVentas.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem3.Name" xml:space="preserve">
-    <value>toolStripMenuItem3</value>
+  <data name="&gt;&gt;tsmSubVentas.Name" xml:space="preserve">
+    <value>tsmSubVentas</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem3.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsmSubVentas.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem7.Name" xml:space="preserve">
-    <value>toolStripMenuItem7</value>
+  <data name="&gt;&gt;tsmReportes.Name" xml:space="preserve">
+    <value>tsmReportes</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem7.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsmReportes.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem8.Name" xml:space="preserve">
     <value>toolStripMenuItem8</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;errorIcono.Name" xml:space="preserve">
+    <value>errorIcono</value>
+  </data>
+  <data name="&gt;&gt;errorIcono.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsmSalir.Name" xml:space="preserve">
+    <value>tsmSalir</value>
+  </data>
+  <data name="&gt;&gt;tsmSalir.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

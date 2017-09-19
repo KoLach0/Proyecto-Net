@@ -9,11 +9,35 @@ namespace Proyecto_NET.Modelo
 {
 	public class Producto{
 
-		private int idProducto;
-		private string nombre;
-		private int precio;
-		private int fk_estado;
+        private int idProducto;
+        private string nombre;
+        private int precio;
+        private int fk_estado;
 
+        public int Fk_estado
+        {
+            get { return fk_estado; }
+            set { fk_estado = value; }
+        }
+
+        public int IdProducto
+        {
+            get { return idProducto; }
+            set { idProducto = value; }
+        }
+
+
+        public string Nombre
+        {
+            get { return nombre; }
+            set { nombre = value; }
+        }
+
+        public int Precio
+        {
+            get { return precio; }
+            set { precio = value; }
+        }
 
 		//Constructor
 
@@ -30,22 +54,11 @@ namespace Proyecto_NET.Modelo
 		}
 
 		// Setters and Getters
-		public int IdProducto {
-			get => idProducto;
-			set => idProducto = value;
-		}
-		public string Nombre {
-			get => nombre;
-			set => nombre = value;
-		}
-		public int Precio {
-			get => precio;
-			set => precio = value;
-		}
-		public int Fk_estado {
-			get => fk_estado;
-			set => fk_estado = value;
-		}
+
+		//public int IdProducto {get => idProducto;set => idProducto = value;}
+		//public string Nombre {get => nombre;set => nombre = value;}
+		//public int Precio {get => precio;set => precio = value;}
+		//public int Fk_estado {get => fk_estado;set => fk_estado = value;}
 
 		// Metodo Insertar
 		public string Insertar(Producto Producto) {
@@ -68,7 +81,7 @@ namespace Proyecto_NET.Modelo
 				SqlParameter ParIdProducto = new SqlParameter();
 				ParIdProducto.ParameterName = "@idproducto";
 				ParIdProducto.SqlDbType = SqlDbType.Int;
-				ParIdProducto.Direction = ParameterDirection.Output;
+                ParIdProducto.SqlValue = Producto.idProducto;
 				SqlCmd.Parameters.Add(ParIdProducto);
 
 				SqlParameter ParNombre = new SqlParameter();
@@ -99,7 +112,7 @@ namespace Proyecto_NET.Modelo
 			catch (Exception e)
 			{
 
-				rta = e.Message;
+				rta = e.Message + e.StackTrace;
 			}
 			finally {
 				if (SqlCon.State== ConnectionState.Open){

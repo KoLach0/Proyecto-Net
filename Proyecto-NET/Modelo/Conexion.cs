@@ -9,7 +9,7 @@ namespace Proyecto_NET.Modelo
 {
 	class Conexion
 	{
-		
-		public static string Cn = "Data Source=KOLACH0\\SQLEXPRESS; Initial Catalog=ProyectoJugos; Integrated Security=true";
+
+        public static string Cn = "Data Source=KOLACH0\\SQLEXPRESS; Initial Catalog=ProyectoJugos; Integrated Security=true";
 	}
 }

@@ -10,9 +10,10 @@ namespace Proyecto_NET.Controlador
 {
 	public class ProductoController{
 
-		public static string Insertar(String nombre, int precio, int estado) {
+		public static string Insertar(int id_producto, String nombre, int precio, int estado) {
 
 			Producto Obj = new Producto();
+            Obj.IdProducto = id_producto;
 			Obj.Nombre = nombre;
 			Obj.Precio = precio;
 			Obj.Fk_estado = estado;
