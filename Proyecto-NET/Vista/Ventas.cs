@@ -47,8 +47,14 @@ namespace Proyecto_NET.vistas
             this.dataProductos.Columns[1].Visible = false;
             this.dataProductos.Columns[4].Visible = false;
             
+		}
 
-        }
+		private void Limpiar()
+		{
+            this.txtCantidad.Text = string.Empty;
+			
+
+		}
 
         //Mostar Listado Productos
 
@@ -59,8 +65,68 @@ namespace Proyecto_NET.vistas
         
         }
 
+		private void dataProductos_CellContentClick(object sender, DataGridViewCellEventArgs e){
 
+			if (e.ColumnIndex == dataProductos.Columns["Seleccionar"].Index){
+				DataGridViewCheckBoxCell chkSeleccionar = (DataGridViewCheckBoxCell)dataProductos.Rows[e.RowIndex].Cells["Seleccionar"];
+				chkSeleccionar.Value = !Convert.ToBoolean(chkSeleccionar.Value);
+			}
+		}
 
+		private void btnAgregar_Click(object sender, EventArgs e)
+		{
+			string rta = "";
+			
+
+			try
+			{
+
+				if (this.txtCantidad.Text == string.Empty){
+					MensajeError("Falta ingresar algunos datos");
+					errorIcono.SetError(txtCantidad, "El campo Cantidad es obligatorio");
+
+				}
+
+				else
+				{
+					string CodigoP;
+					int cantidad;
+
+					foreach (DataGridViewRow row in dataProductos.Rows){
+
+						if (Convert.ToBoolean(row.Cells[0].Value)){
+
+							CodigoP = Convert.ToString(row.Cells[1].Value);
+							cantidad = Convert.ToInt32(row.Cells[3].Value);
+							cantidad = cantidad * Convert.ToInt32(txtCantidad.Text);
+
+							rta = VentaController.Insertar(Convert.ToInt32(CodigoP),Convert.ToInt32(txtCantidad.Text),cantidad);
+
+							if (rta.Equals("OK")){
+								this.MensajeOK("Se ha agregado el producto");
+								tabPDisponibles.Hide() ;
+								tabPVendidos.Show();
+
+							}else {
+								this.MensajeError(rta);
+							}
+						}
+
+					}
+
+				}
+
+			
+
+				this.Limpiar();
+			}
+			catch (Exception ex)
+			{
+
+				MessageBox.Show(ex.Message + ex.StackTrace);
+			}
+
+		}
 
 		
 	}
