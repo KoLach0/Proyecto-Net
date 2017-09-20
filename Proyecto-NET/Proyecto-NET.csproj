@@ -58,6 +58,7 @@
     <Compile Include="Modelo\Inventario.cs" />
     <Compile Include="Modelo\Producto.cs" />
     <Compile Include="Modelo\TarjetasCredito.cs" />
+    <Compile Include="Modelo\Ventas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
