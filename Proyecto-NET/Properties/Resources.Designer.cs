@@ -63,6 +63,26 @@ namespace Proyecto_NET.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IconoAgregar {
+            get {
+                object obj = ResourceManager.GetObject("IconoAgregar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconoQuitar {
+            get {
+                object obj = ResourceManager.GetObject("IconoQuitar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap jugo {
             get {
                 object obj = ResourceManager.GetObject("jugo", resourceCulture);

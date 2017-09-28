@@ -10,10 +10,12 @@ namespace Proyecto_NET.Modelo
 {
 	class Ventas{
 
-		private int idVenta;
-		private int fkProducto;
-		private int cantidad;
-		private int totalProducto;
+        private int idVenta;
+        private int fkProducto;
+        private int cantidad;
+        private int totalProducto;
+
+      
 
 		public Ventas() { }
 
@@ -26,14 +28,36 @@ namespace Proyecto_NET.Modelo
 
 		}
 
-		public int IdVenta { get => idVenta; set => idVenta = value; }
-		public int FkProducto { get => fkProducto; set => fkProducto = value; }
-		public int Cantidad { get => cantidad; set => cantidad = value; }
-		public int TotalProducto { get => totalProducto; set => totalProducto = value; }
+        public int IdVenta
+        {
+            get { return idVenta; }
+            set { idVenta = value; }
+        }
+
+        public int FkProducto
+        {
+            get { return fkProducto; }
+            set { fkProducto = value; }
+        }
+        public int Cantidad
+        {
+            get { return cantidad; }
+            set { cantidad = value; }
+        }
+        public int TotalProducto
+        {
+            get { return totalProducto; }
+            set { totalProducto = value; }
+        }
+
+		//public int IdVenta { get => idVenta; set => idVenta = value; }
+		//public int FkProducto { get => fkProducto; set => fkProducto = value; }
+		//public int Cantidad { get => cantidad; set => cantidad = value; }
+		//public int TotalProducto { get => totalProducto; set => totalProducto = value; }
 
 
 		// Metodo Insertar
-		public string Insertar(Ventas Venta)
+		public string Insertar(Ventas Venta, List<Producto> productos)
 		{
 
 			string rta = "";
@@ -45,15 +69,17 @@ namespace Proyecto_NET.Modelo
 
 				SqlCon.ConnectionString = Conexion.Cn;
 				SqlCon.Open();
+				SqlTransaction SqlTra = SqlCon.BeginTransaction();
 
 				SqlCommand SqlCmd = new SqlCommand();
 				SqlCmd.Connection = SqlCon;
+				SqlCmd.Transaction = SqlTra;
 				SqlCmd.CommandText = "pa_insertar_venta";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 
 				SqlParameter ParIdVenta = new SqlParameter();
 				ParIdVenta.ParameterName = "@idventa";
-				ParIdVenta.SqlDbType = SqlDbType.Int;
+                ParIdVenta.SqlDbType = SqlDbType.Int;
 				ParIdVenta.Direction = ParameterDirection.Output;
 				SqlCmd.Parameters.Add(ParIdVenta);
 
@@ -79,6 +105,18 @@ namespace Proyecto_NET.Modelo
 
 				rta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "No se ingreso el registro";
 
+				if (rta.Equals("OK")){
+					// Obtener el ID de "Ventas" generado
+					this.idVenta = Convert.ToInt32(SqlCmd.Parameters["@idventa"].Value);
+					DetalleVenta det = new DetalleVenta();
+
+						det.FkVenta = this.idVenta;
+						rta = det.Insertar(det, ref SqlCon, ref SqlTra);
+					SqlTra.Commit();
+
+				}else {
+					SqlTra.Rollback();
+				}
 
 			}
 			catch (Exception e)
@@ -95,6 +133,35 @@ namespace Proyecto_NET.Modelo
 			}
 
 			return rta;
+
+		}
+
+		//Metodo Mostrar
+		public DataTable MostrarDetalleVenta()
+		{
+
+			DataTable DtResultado = new DataTable("detalle_venta");
+			SqlConnection SqlCon = new SqlConnection();
+
+			try
+			{
+				SqlCon.ConnectionString = Conexion.Cn;
+				SqlCommand SqlCmd = new SqlCommand();
+				SqlCmd.Connection = SqlCon;
+				SqlCmd.CommandText = "pa_mostrar_detalle_venta";
+				SqlCmd.CommandType = CommandType.StoredProcedure;
+
+				SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+				SqlDat.Fill(DtResultado);
+
+			}
+			catch (Exception e)
+			{
+				DtResultado = null;
+			}
+
+			return DtResultado;
+
 
 		}
 	}

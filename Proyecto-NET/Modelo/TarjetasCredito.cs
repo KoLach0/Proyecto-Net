@@ -106,5 +106,34 @@ namespace Proyecto_NET.Modelo
 
 		}
 
+        //Metodo Mostrar
+        public DataTable Mostrar()
+        {
+
+            DataTable DtResultado = new DataTable("tarjetas_credito");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "pa_mostrar_tarjetas";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+
+            }
+            catch (Exception e)
+            {
+                DtResultado = null;
+            }
+
+            return DtResultado;
+
+
+        }
+
 	}
 }

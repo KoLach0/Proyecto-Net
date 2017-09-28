@@ -10,15 +10,16 @@ namespace Proyecto_NET.Modelo
 {
 	class DetalleVenta{
 
-		private int idDetalleVenta;
-		private int fkTarjeta;
-		private int fkVenta;
-		private int cedulaCliente;
-		private string nomCliente;
-		private int totalEfectivo;
-		private int totalTarjeta;
-		private int vueltas;
-		private DateTime fecha;
+        private int idDetalleVenta;
+        private int fkTarjeta;
+        private int fkVenta;
+        private int cedulaCliente;
+        private string nomCliente;
+        private int totalEfectivo;
+        private int totalTarjeta;
+        private int vueltas;
+        private DateTime fecha;
+
 
 		public DetalleVenta() { }
 
@@ -35,32 +36,72 @@ namespace Proyecto_NET.Modelo
 			this.fecha = fecha;
 		}
 
-		public int IdDetalleVenta { get => idDetalleVenta; set => idDetalleVenta = value; }
-		public int FkTarjeta { get => fkTarjeta; set => fkTarjeta = value; }
-		public int FkVenta { get => fkVenta; set => fkVenta = value; }
-		public int CedulaCliente { get => cedulaCliente; set => cedulaCliente = value; }
-		public string NomCliente { get => nomCliente; set => nomCliente = value; }
-		public int TotalEfectivo { get => totalEfectivo; set => totalEfectivo = value; }
-		public int TotalTarjeta { get => totalTarjeta; set => totalTarjeta = value; }
-		public int Vueltas { get => vueltas; set => vueltas = value; }
-		public DateTime Fecha { get => fecha; set => fecha = value; }
+        public int IdDetalleVenta
+        {
+            get { return idDetalleVenta; }
+            set { idDetalleVenta = value; }
+        }
 
+        public int FkTarjeta
+        {
+            get { return fkTarjeta; }
+            set { fkTarjeta = value; }
+        }
+        public int FkVenta
+        {
+            get { return fkVenta; }
+            set { fkVenta = value; }
+        }
+
+        public int CedulaCliente
+        {
+            get { return cedulaCliente; }
+            set { cedulaCliente = value; }
+        }
+
+        public string NomCliente
+        {
+            get { return nomCliente; }
+            set { nomCliente = value; }
+        }
+
+        public int TotalEfectivo
+        {
+            get { return totalEfectivo; }
+            set { totalEfectivo = value; }
+        }
+
+        public int TotalTarjeta
+        {
+            get { return totalTarjeta; }
+            set { totalTarjeta = value; }
+        }
+
+        public int Vueltas
+        {
+            get { return vueltas; }
+            set { vueltas = value; }
+        }
+
+
+        public DateTime Fecha
+        {
+            get { return fecha; }
+            set { fecha = value; }
+        }
+        
 		// Metodo Insertar
-		public string Insertar(DetalleVenta DVenta)
+		public string Insertar(DetalleVenta DVenta, ref SqlConnection SqlCon, ref SqlTransaction SqlTra)
 		{
 
 			string rta = "";
 
-			SqlConnection SqlCon = new SqlConnection();
-
 			try
 			{
 
-				SqlCon.ConnectionString = Conexion.Cn;
-				SqlCon.Open();
-
 				SqlCommand SqlCmd = new SqlCommand();
 				SqlCmd.Connection = SqlCon;
+				SqlCmd.Transaction = SqlTra;
 				SqlCmd.CommandText = "pa_insertar_detalle_venta";
 				SqlCmd.CommandType = CommandType.StoredProcedure;
 
@@ -116,7 +157,7 @@ namespace Proyecto_NET.Modelo
 				SqlParameter ParFecha = new SqlParameter();
 				ParFecha.ParameterName = "@fecha";
 				ParFecha.SqlDbType = SqlDbType.Date;
-				ParFecha.SqlValue = DVenta.Fecha;
+                ParFecha.Direction = ParameterDirection.Output;
 				SqlCmd.Parameters.Add(ParFecha);
 
 				//Ejecutar el procedimiento
@@ -130,15 +171,38 @@ namespace Proyecto_NET.Modelo
 
 				rta = e.Message + e.StackTrace;
 			}
-			finally
-			{
-				if (SqlCon.State == ConnectionState.Open)
-				{
-					SqlCon.Close();
-				}
-			}
+			
 
 			return rta;
+
+		}
+
+		//Metodo Mostrar
+		public DataTable Mostrar()
+		{
+
+			DataTable DtResultado = new DataTable("detalle_venta");
+			SqlConnection SqlCon = new SqlConnection();
+
+			try
+			{
+				SqlCon.ConnectionString = Conexion.Cn;
+				SqlCommand SqlCmd = new SqlCommand();
+				SqlCmd.Connection = SqlCon;
+				SqlCmd.CommandText = "pa_mostrar_detalle_venta";
+				SqlCmd.CommandType = CommandType.StoredProcedure;
+
+				SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+				SqlDat.Fill(DtResultado);
+
+			}
+			catch (Exception e)
+			{
+				DtResultado = null;
+			}
+
+			return DtResultado;
+
 
 		}
 

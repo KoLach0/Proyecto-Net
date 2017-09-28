@@ -1,6 +1,7 @@
 ﻿using Proyecto_NET.Modelo;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,5 +18,13 @@ namespace Proyecto_NET.Controlador
 
 			return Tar.Insertar(Tar);
 		}
+
+        public static DataTable Mostrar()
+        {
+
+            return new TarjetasCredito().Mostrar();
+        }
+
+
 	}
 }

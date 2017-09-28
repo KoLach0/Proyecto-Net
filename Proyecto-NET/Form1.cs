@@ -1,4 +1,5 @@
 ﻿using Proyecto_NET.Controlador;
+using Proyecto_NET.Vista;
 using Proyecto_NET.vistas;
 using System;
 using System.Collections.Generic;
@@ -42,7 +43,7 @@ namespace Proyecto_NET
 
         private void tsmSubVentas_Click(object sender, EventArgs e)
         {
-            Ventas formVentas = new Ventas();
+            frmVentas formVentas = new frmVentas();
             formVentas.Show();
             formVentas.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Minimized;

@@ -121,4 +121,10 @@
   <data name="jugo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jugo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IconoAgregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconoAgregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoQuitar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconoQuitar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
